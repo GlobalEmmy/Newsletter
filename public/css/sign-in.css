@@ -1,19 +1,60 @@
-html,
-body {
-  height: 100%;
-  /* background: #A1C2F1; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
-.container {
+:root {
+  --color-body-bg: #d8dae2;
+  --color-white: #fff;
+  --color-light: #eff0f1;
+  --color-dark: #12122e;
+  --btn-sign: #4A55A2;
+
+  --tansition: all 0.5s ease;
+}
+html {
+  background: var(--color-body-bg);
+  border-radius: 1rem;
+  display: grid; 
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-dark);
+  text-align: center;
+}
+main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1;
+  padding: 1rem;
+  border: 4px solid var(--color-body-bg);
+  border-radius: 1rem;
+ 
+
 }
-.logo {
-  border: 1 px solid black;
+.container {
+  
+ 
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--btn-sign);
+  border-radius: 0.8rem;
 }
 form {
-  border: 1 px solid black;
+  background: var(--color-white);
+  /* background: green; */
+  margin-bottom: 1rem;
+  /* border: 4px solid var(--color-white); */
+}
+form:hover {
+  /* background: var(--color-light); */
 }
 
 .form-signin {
@@ -36,13 +77,17 @@ form {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.btn {
+  background: var(--btn-sign);
+}
 small {
-  text-align: center;
+  font-family: 'Fasthand', cursive;
+  color: var(--btn-sign);
+  font-size: 1.5rem;
 }
 .input__1 {
   border-radius: 10px 10px 0px 0px;
 }
-
 .input__2,
 .input__3 {
   border-radius: 0;
