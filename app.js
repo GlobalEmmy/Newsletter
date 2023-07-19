@@ -38,7 +38,7 @@ app.post("/", (req, res) => {
   let url = "https://us14.api.mailchimp.com/3.0/lists/cdd2db561a";
   let options = {
     method: "POST",
-    auth: "Emmanuel:0492369dafa9580e3ac04a4c61089e74-us14",
+    auth: "Emmanuel:2c6dc92b08ef3a91656f7ce87a87c6b0-us14",
   };
   let request = https.request(url, options, (response) => {
 
@@ -72,3 +72,7 @@ app.listen(port, () => {
 
 //unique id
 //cdd2db561a
+
+//Grandeur Newsletter
+
+//2c6dc92b08ef3a91656f7ce87a87c6b0-us14
